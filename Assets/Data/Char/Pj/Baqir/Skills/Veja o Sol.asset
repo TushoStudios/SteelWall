@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Veja o Sol
   Description: 
   icon: {fileID: 8614319688527396397, guid: 34e72977fcb8ec2489ae6f75b47546d2, type: 3}
-  anim: {fileID: 0}
+  anim: {fileID: -7294555412948472804, guid: 8ec8c47b6e9991d4880c4ce821188fc1, type: 3}
+  reaction: 1
   effects:
   - {fileID: 11400000, guid: 419002ab9bf493c428dbed457ca6db5d, type: 2}
   - {fileID: 11400000, guid: 0418f1574bc0cc24bbf0f0e0843b1f97, type: 2}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 public class StatsPanel : MonoBehaviour
 {
     [SerializeField] protected BattleChar character;
@@ -31,14 +32,23 @@ public class StatsPanel : MonoBehaviour
         }
     }
 
+    void RemoveChar(BattleChar character)
+    {
+        if(this.character == character)
+        {
+            this.character = null;
+            UpdateChildren();
+        }
+    }
+
     public virtual void SubscriveEvents(BattleChar character)
     {
-
+        character.OnDeath += RemoveChar;
     }
 
     public virtual void UnsubscriveEvents(BattleChar character)
     {
-
+        character.OnDeath -= RemoveChar;
     }
 
     protected void OnEnable()

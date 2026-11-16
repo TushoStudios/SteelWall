@@ -7,7 +7,8 @@ public class PJBattleHUD : StatsPanel
     [SerializeField] SwapButton swapButton;
     [SerializeField] SkipButton skipButton;
     [SerializeField] ButtonSelect buttonSelect;
-
+    [SerializeField] SkillDescription skillDescription;
+    [SerializeField] Material white, gray;
     void Start()
     {
         
@@ -19,13 +20,24 @@ public class PJBattleHUD : StatsPanel
 
     public override void UpdateChildren()
     {
+        if(character == null) return;
         base.UpdateChildren();
         if (character is not PjController pj) return;
         for (int i = 0; i < pj.read_skills.Count; i++)
         {
             skillIcon[i].UpdateSkillSO(pj.read_skills[i]);
             skillIcon[i].UpdateSprite();
+            foreach(int pos in pj.read_skills[i].use_pos)
+            {
+                if(pj.GetSelfPos() == pos)
+                {
+                    skillIcon[i].SetColor(white);
+                    break;
+                }
+                skillIcon[i].SetColor(gray);
+            }
         }
+        skillDescription.HideTooltip();
     }
 
     public void SetSkill(SkillSO so)
@@ -86,6 +98,8 @@ public class PJBattleHUD : StatsPanel
         character.OnSkillSelect += SelectSkill;
         character.OnMoveActionSelect += SelectMoveButton;
         character.OnSkipSelect += SelectSkipButton;
+        character.OnSkillConfirm += skillDescription.UpdateTooltip;  
+        character.OnSkillCancel += skillDescription.HideTooltip;
     }
 
     public override void UnsubscriveEvents(BattleChar character)
@@ -93,6 +107,8 @@ public class PJBattleHUD : StatsPanel
         base.UnsubscriveEvents(character);
         character.OnSkillSelect -= SelectSkill;
         character.OnMoveActionSelect -= SelectMoveButton;
-        character.OnSkipSelect -= SelectMoveButton;
+        character.OnSkipSelect -= SelectSkipButton;
+        character.OnSkillConfirm -= skillDescription.UpdateTooltip;
+        character.OnSkillCancel -= skillDescription.HideTooltip;
     }
 }

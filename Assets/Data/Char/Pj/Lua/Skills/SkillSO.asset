@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: 
   Description: 
   icon: {fileID: 7905958872146435475, guid: ba3f6ceca6cd4014c9f814d23e088a1b, type: 3}
-  anim: {fileID: 0}
+  anim: {fileID: -74641670520355645, guid: d4bb3b631b41c0541af3f92c41f36a90, type: 3}
+  reaction: 1
   effects:
   - {fileID: 11400000, guid: 9e7c50e91e525d0479f4e9b7881eee89, type: 2}
   - {fileID: 11400000, guid: 2313cae223301df4186db98371df60cc, type: 2}

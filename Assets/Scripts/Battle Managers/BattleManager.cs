@@ -19,6 +19,7 @@ public class BattleManager : MonoBehaviour
 {
     
     public BattleHud hud;
+    public BattlePresentation presentation;
 
     [SerializeField] List<BattleChar> initiative = new List<BattleChar>();
     [SerializeField] GameObject pj_prefab, enemy_prefab, tomb_prefab;
@@ -83,7 +84,7 @@ public class BattleManager : MonoBehaviour
     void StartTurn()
     {
         CheckCharactersAlive();
-        current = initiative[initiative_index];
+        SetCurrent(initiative_index);
         hud.OnStartTurn(current);
         current.SetRound();
         RefreshHUD();
@@ -99,6 +100,18 @@ public class BattleManager : MonoBehaviour
         RefreshHUD(); 
         
     }
+
+    void SetCurrent(int i)
+    {
+        if (i >= initiative.Count)
+        {
+            current = initiative[0];
+            initiative_index = 0;
+            return;
+        }
+        current = initiative[i];    
+    }
+
 
     void SpawnCharacters(List<PJData> pjs, List<EnemyData> enemies)
     {

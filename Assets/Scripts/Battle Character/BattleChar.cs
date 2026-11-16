@@ -385,6 +385,8 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
     public virtual IEnumerator StartSkill()
     {
         BattleResult result = new BattleResult();
+        result.attacker = this;
+        result.skill = skill_current;
         yield return StartCoroutine(OnGoingSkill(result));
     }
 
@@ -399,6 +401,7 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
         if (result.skill_fail) yield break ;
         skill_current_data.Execute(this, result);
         yield return null;
+        yield return StartCoroutine(battle_manager.presentation.PresentationCoroutine(result));
     }
 
     public void ResolveSkill(BattleResult result)
@@ -414,7 +417,7 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
         foreach (BattleChar n in ctx.Target)
         {
             int hitChance = result.acc_base - n.dodge;
-
+            result.targets.Add(n);
             if (result.acc_roll > hitChance && skill_current_data.original_skill.can_dodge)
             {
                 Debug.Log($"{n.name} desviou");

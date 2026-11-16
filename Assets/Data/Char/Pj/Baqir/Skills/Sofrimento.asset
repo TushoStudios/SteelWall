@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Sofrimento
   Description: 
   icon: {fileID: -8045637315960439886, guid: 3e0bbeebf390cdf4cbe4987a24e0e223, type: 3}
-  anim: {fileID: 0}
+  anim: {fileID: -1058940749459921734, guid: 8476085b3c55a724589e9db23b521ca4, type: 3}
+  reaction: 1
   effects:
   - {fileID: 11400000, guid: 6006e69472dfba746b37700538a67db9, type: 2}
   - {fileID: 11400000, guid: d19acc6c4cf52d846a921f8499239398, type: 2}

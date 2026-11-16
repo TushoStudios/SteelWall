@@ -7,6 +7,7 @@ public class SkillSO : ScriptableObject
     public string Name, Description;
     public Sprite icon;
     public Sprite anim;
+    public BattleSprites reaction;
     public List<SkillEffectSO> effects;
     public List<SkillModifiersSO> modifiers;
     public int[] pos;

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 34ddd3f56b5e9724ea7a70fd1a4fe659
+guid: 907addbed2d6d3e42acffbd994bca110
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -459176234962652067
-    second: HudFundo_0
+      213: 8227358403824186160
+    second: HudFundo 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HudFundo_0
+      name: HudFundo 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d54ffb9a5ada0a9f0800000000000000
-      internalID: -459176234962652067
+      spriteID: 033f3cbb0e27d2270800000000000000
+      internalID: 8227358403824186160
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HudFundo_0: -459176234962652067
+      HudFundo 1_0: 8227358403824186160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,6 @@ public class BattleHud : MonoBehaviour
     {
         SetCharacter(pj);
         SetCharacter(n);
-        
     }
 
     public void SetCharacter(BattleChar c)

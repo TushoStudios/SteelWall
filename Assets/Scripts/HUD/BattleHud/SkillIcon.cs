@@ -28,6 +28,11 @@ public class SkillIcon : MonoBehaviour, IPointerClickHandler
         so = skSO;
     }
 
+    public void SetColor(Material color)
+    {
+        image.material = color;
+    }
+
     public void UpdateSprite()
     {
         image.sprite = so.icon; 
