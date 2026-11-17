@@ -1,9 +1,10 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using System.Collections;
 public class BattleNumber : MonoBehaviour
 {
-    [SerializeField] TMP_Text text;
+    [SerializeField] TextMeshProUGUI text;
     public string value;
     void Awake ()
     {
@@ -18,9 +19,14 @@ public class BattleNumber : MonoBehaviour
 
     public void UpdateText(float t)
     {
-        value = t.ToString();
+        value = Mathf.RoundToInt(t).ToString();
         text.text = value;
         StartCoroutine(MoveText());
+    }
+
+    public void SetColor(TMP_ColorGradient color)
+    {
+        text.colorGradientPreset = color;
     }
 
     public IEnumerator MoveText()
