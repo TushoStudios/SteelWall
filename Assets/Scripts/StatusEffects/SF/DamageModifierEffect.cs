@@ -10,7 +10,7 @@ public class DamageModifierEffect : StatusEffectData
 
     public override void OnDamageDealt(DamageInfo info)
     {
-        info.damage += (info.damage * value) / 100;
+        info.value += (info.value * value) / 100;
         stacks--;
     }
 }

@@ -36,11 +36,15 @@ public class BattlePresentation : MonoBehaviour
     void MoveAllChars(BattleResult result)
     {
         float dir = result.attacker is PjController ? 1.5f : -1.5f;
-        if(!result.targets.Contains(result.attacker)) StartCoroutine(CharMove(result.attacker, dir, 1.2f));
-        foreach(BattleChar c in result.targets)
+
+        StartCoroutine(CharMove(result.attacker, dir, 1.2f));
+        result.attacker.sprite_renderer.sortingOrder += 10;
+
+        foreach (BattleChar c in result.targets)
         {
             if (c == result.attacker) continue;
             StartCoroutine(CharMove(c, dir, 1.2f));
+            c.sprite_renderer.sortingOrder += 10;
         }
     }
     void ReturnAllChars(List<OriginalCharPos> pos)
@@ -49,9 +53,9 @@ public class BattlePresentation : MonoBehaviour
         {
             StartCoroutine(CharReturnPos(p, 0.45f));
             StartCoroutine(CharReturnSize(p, 0.3f));
-            StartCoroutine(CharReturnSprite(p,0.55f));
+            StartCoroutine(CharReturnSprite(p,0.47f));
         }
-        StartCoroutine(RotateCamera(1f, 0f));
+        StartCoroutine(RotateCamera(0.45f, 0f));
     }
     void SetOriginalPos(BattleResult result, List<OriginalCharPos> pos)
     {
@@ -150,6 +154,7 @@ public class BattlePresentation : MonoBehaviour
         }
         pos.character.transform.position = pos.originalPos;
         pos.character.transform.eulerAngles = Vector3.zero;
+        pos.character.sprite_renderer.sortingOrder -= 10;
     }
     IEnumerator CharReturnSize(OriginalCharPos pos, float duration = 0.5f)
     {

@@ -8,7 +8,7 @@ public class HealPerTurnEffect : StatusEffectData
 
     public override void OnStartTurn()
     {
-        HealInfo healInfo = new HealInfo(source, stacks, owner);
+        HealInfo healInfo = new HealInfo(source, owner, stacks);
         owner.DealHeal(healInfo);
         stacks--;
     }

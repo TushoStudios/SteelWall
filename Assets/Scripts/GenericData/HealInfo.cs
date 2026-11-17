@@ -1,14 +1,10 @@
 using UnityEngine;
 
-public class HealInfo
+public class HealInfo : GenericBattleValue
 {
-    public BattleChar healer;
-    public float heal_amount;
-    public BattleChar target;
-    public HealInfo(BattleChar healer, float heal_amount, BattleChar target)
+
+    public HealInfo(BattleChar c, BattleChar t, float value) : base(c, t, value)
     {
-        this.healer = healer;
-        this.heal_amount = heal_amount;
-        this.target = target;
+
     }
 }

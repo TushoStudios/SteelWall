@@ -5,6 +5,7 @@ public class DamageTarget: SkillEffectSO
 {
     [Range(0, 10)]
     public float dmg;
+    public bool ignore_prot;
     public override void Execute(BattleChar user, BattleResult result)
     {
         int min_damage = result.crit == true ? (int)(user.GetStat(StatType.DMG_MIN) * dmg) * 2 : (int)(user.GetStat(StatType.DMG_MIN) * dmg);
@@ -20,7 +21,7 @@ public class DamageTarget: SkillEffectSO
 
         foreach (BattleChar target in result.hit)
         {
-            DamageInfo info = new DamageInfo(user, target, damage);
+            DamageInfo info = new DamageInfo(user, target, damage, ignore_prot);
             user.DealDamage(info);
         }
     }

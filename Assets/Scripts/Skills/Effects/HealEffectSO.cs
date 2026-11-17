@@ -12,7 +12,7 @@ public class HealEffectSO : SkillEffectSO
         if(self)
         {
             int heal_amount = unique_value ? max_heal : Random.Range(min_heal, max_heal + 1);
-            HealInfo info = new HealInfo(user, heal_amount, user);
+            HealInfo info = new HealInfo(user, user, heal_amount);
             user.DealHeal(info);
             return;
         }
@@ -20,7 +20,7 @@ public class HealEffectSO : SkillEffectSO
         foreach (BattleChar target in result.hit)
         {
             int heal_amount = unique_value ? max_heal : Random.Range(min_heal, max_heal + 1);
-            HealInfo info = new HealInfo(user, heal_amount, target);
+            HealInfo info = new HealInfo(user, target, heal_amount);
             user.DealHeal(info);
         }
     }

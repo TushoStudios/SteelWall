@@ -143,49 +143,49 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
     #region Generic
     public void TakeDamage(DamageInfo info)
     {
-        Debug.Log($"dano pré defesa: {info.damage}");
+        Debug.Log($"dano pré defesa: {info.value}");
         if(!info.ignore_prot) ReduceDamage(info);
-        Debug.Log($"dano pós defese: {info.damage}");
+        Debug.Log($"dano pós defese: {info.value}");
         OnDamageTaken(info);
-        if(info.damage>= 0)
+        if(info.value >= 0)
         {
-            life_current = (int)Mathf.Clamp(life_current - info.damage, 0, Mathf.Infinity);
+            life_current = (int)Mathf.Clamp(life_current - info.value, 0, Mathf.Infinity);
         }
     }
 
     public void DealDamage(DamageInfo info)
     {
         OnDamageDealt(info);   
-        if(info.damage >= 0)
+        if(info.value >= 0)
         {
-            info.receiver.TakeDamage(info);
+            info.target.TakeDamage(info);
         }
     }
 
     public void ReduceDamage(DamageInfo info)
     {
-        if (info.damage >= 0)
+        if (info.value >= 0)
         {
             float prot = protect;
-            Debug.Log(info.damage * prot / 100);
-            info.damage -= (int)(info.damage * (prot / 100));
+            Debug.Log(info.value * prot / 100);
+            info.value -= (int)(info.value * (prot / 100));
         }
     }
 
     public void ReceiveHeal(HealInfo info)
     {
-        Debug.Log($"ME CURARAM EM {info.heal_amount}");
+        Debug.Log($"ME CURARAM EM {info.value}");
         OnHealReceived(info);
-        if(info.heal_amount >= 0)
+        if(info.value >= 0)
         {
-            life_current = (int)Mathf.Clamp(life_current + info.heal_amount, 0, life_max);
+            life_current = (int)Mathf.Clamp(life_current + info.value, 0, life_max);
         }
     }
 
     public void DealHeal(HealInfo info)
     {
         OnHealGiven(info);
-        if(info.heal_amount >= 0)
+        if(info.value >= 0)
         {
             info.target.ReceiveHeal(info);
         }
