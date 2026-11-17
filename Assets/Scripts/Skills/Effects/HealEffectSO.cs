@@ -14,6 +14,7 @@ public class HealEffectSO : SkillEffectSO
             int heal_amount = unique_value ? max_heal : Random.Range(min_heal, max_heal + 1);
             HealInfo info = new HealInfo(user, user, heal_amount);
             user.DealHeal(info);
+            result.values.Add(info);
             return;
         }
 
@@ -22,6 +23,7 @@ public class HealEffectSO : SkillEffectSO
             int heal_amount = unique_value ? max_heal : Random.Range(min_heal, max_heal + 1);
             HealInfo info = new HealInfo(user, target, heal_amount);
             user.DealHeal(info);
+            result.values.Add(info);
         }
     }
 }

@@ -15,7 +15,9 @@ public class DamageTarget: SkillEffectSO
         Debug.Log($"{min_damage} | {max_damage} | { damage }");
         if (self)
         {
-            user.TakeDamage(new DamageInfo(user, user, damage, true));
+            DamageInfo info = new DamageInfo(user, user, damage, true);
+            user.TakeDamage(info);
+            result.values.Add(info);
             return;
         }
 
@@ -23,6 +25,7 @@ public class DamageTarget: SkillEffectSO
         {
             DamageInfo info = new DamageInfo(user, target, damage, ignore_prot);
             user.DealDamage(info);
+            result.values.Add(info);
         }
     }
 }

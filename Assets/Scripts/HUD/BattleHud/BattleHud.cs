@@ -7,6 +7,7 @@ public class BattleHud : MonoBehaviour
     public EnemyBattleHUD enemy_hud;
     public LifeBarManager lifeManager;
     public IndicatorManager indicatorManager;
+    public ShowBattleNumbers showBattleNumbers;
     public void SetCharacters(BattleChar pj, BattleChar n) 
     {
         SetCharacter(pj);
@@ -43,5 +44,28 @@ public class BattleHud : MonoBehaviour
         if (c is PjController pj) { pj_hud.UnsubscriveEvents(pj); }
         if (c is EnemyController n) { enemy_hud.UnsubscriveEvents(n); }
         indicatorManager.UnsubscribeEvents(c);
+    }
+
+    public void HideAll()
+    {
+        lifeManager.HideBars();
+        indicatorManager.HideIndicators();
+    }
+
+    public void ShowAll()
+    {
+        lifeManager.ShowBars();
+        indicatorManager.ShowIndicators();  
+    }
+
+    public void OnPresentationStart(BattleResult result)
+    {
+        HideAll();
+        showBattleNumbers.ShowNumbers(result.values);
+    }
+
+    public void OnPresentationEnd()
+    {
+        ShowAll();
     }
 }

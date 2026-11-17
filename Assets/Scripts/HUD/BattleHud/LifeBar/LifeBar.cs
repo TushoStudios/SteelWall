@@ -38,4 +38,16 @@ public class LifeBar : MonoBehaviour
     {
         transform.localScale = Vector2.one;
     }
+
+    public void HideLifeBar()
+    {
+        if (gameObject.activeSelf == false) return;
+        gameObject.SetActive(false);
+    }
+
+    public void ShowLifeBar()
+    {
+        if (gameObject.activeSelf == true) return; 
+        gameObject.SetActive(true);
+    }
 }

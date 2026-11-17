@@ -78,7 +78,7 @@ public class LifeBarManager : MonoBehaviour
     {
         foreach(LifeBar bar in lifeBars)
         {
-            bar.GetComponent<Image>().enabled = false;
+            bar.HideLifeBar();
         }
     }
 
@@ -86,7 +86,7 @@ public class LifeBarManager : MonoBehaviour
     {
         foreach(LifeBar bar in lifeBars)
         {
-            bar.GetComponent<Image>().enabled = true;
+            bar.ShowLifeBar();
         }
     }
 }

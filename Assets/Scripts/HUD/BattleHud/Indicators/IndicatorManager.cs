@@ -145,6 +145,24 @@ public class IndicatorManager : MonoBehaviour
         c.OnDeath -= UnsubscribeEvents;
     }
 
+    public void HideIndicators()
+    {
+        turn_indicator.gameObject.SetActive(false);
+        foreach(Indicator indicator in indicators)
+        {
+            indicator.gameObject.SetActive(false);
+        }
+    }
+
+    public void ShowIndicators()
+    {
+        turn_indicator.gameObject.SetActive(true);
+        foreach(Indicator indicator in indicators)
+        {
+            indicator.gameObject.SetActive(true);
+        }
+    }
+
     public void OnDestroy()
     {
         

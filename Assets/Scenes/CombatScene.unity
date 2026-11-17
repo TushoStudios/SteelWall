@@ -7431,6 +7431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125972867}
   - component: {fileID: 2125972868}
+  - component: {fileID: 2125972869}
   m_Layer: 5
   m_Name: COMBAT_HUD
   m_TagString: Untagged
@@ -7476,6 +7477,20 @@ MonoBehaviour:
   enemy_hud: {fileID: 1940584918}
   lifeManager: {fileID: 1328683297}
   indicatorManager: {fileID: 154502492}
+  showBattleNumbers: {fileID: 2125972869}
+--- !u!114 &2125972869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125972866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e136180d3023448bc0edf84e1e12b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowBattleNumbers
+  pref: {fileID: 4388586287947235114, guid: 09be9bcfcb214174ab1bf37b7baf464d, type: 3}
 --- !u!1001 &3971430902943464119
 PrefabInstance:
   m_ObjectHideFlags: 0

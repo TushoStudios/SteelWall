@@ -401,7 +401,9 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
         if (result.skill_fail) yield break ;
         skill_current_data.Execute(this, result);
         yield return null;
+        battle_manager.hud.OnPresentationStart(result);
         yield return StartCoroutine(battle_manager.presentation.PresentationCoroutine(result));
+        battle_manager.hud.OnPresentationEnd();
     }
 
     public void ResolveSkill(BattleResult result)
