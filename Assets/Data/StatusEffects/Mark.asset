@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 1
   effectName: Mark
-  icon: {fileID: 0}
+  description: "Requisito para efeitos secund\xE1rios das habilidades"
+  icon: {fileID: -6989339202161741409, guid: bcd242994c6141e458b662a7fd3bef6e, type: 3}

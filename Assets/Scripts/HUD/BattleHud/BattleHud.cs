@@ -8,6 +8,7 @@ public class BattleHud : MonoBehaviour
     public LifeBarManager lifeManager;
     public IndicatorManager indicatorManager;
     public ShowBattleNumbers showBattleNumbers;
+    public StatusBarManager statusBarManager;
     public void SetCharacters(BattleChar pj, BattleChar n) 
     {
         SetCharacter(pj);

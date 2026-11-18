@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 1
   effectName: Restoration
-  icon: {fileID: 0}
+  description: "Cura equivalente aos ac\xFAmulos no come\xE7o do turno"
+  icon: {fileID: 1987289428962411420, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}

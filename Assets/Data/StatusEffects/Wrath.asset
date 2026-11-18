@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 1
   effectName: Wrath
-  icon: {fileID: 0}
+  description: "Aumenta o dano causado pela pr\xF3xima habilidade"
+  icon: {fileID: 1498827748727952063, guid: 5a58e87e382538d438d5ab962eeafd80, type: 3}

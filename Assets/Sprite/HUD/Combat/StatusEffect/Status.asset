@@ -35,41 +35,399 @@ MonoBehaviour:
     m_StrikethroughOffset: 0
     m_StrikethroughThickness: 0
     m_TabWidth: 0
-  m_Material: {fileID: 2784335768979704067}
-  spriteSheet: {fileID: 2800000, guid: d4eaaacb2f61c6e4a9c60163932e497b, type: 3}
+  m_Material: {fileID: 623942125232003114}
+  spriteSheet: {fileID: 2800000, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
   m_SpriteCharacterTable:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 0
     m_Scale: 1
+    m_Name: critup
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 1
+    m_Scale: 1
+    m_Name: weakness
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 2
+    m_Scale: 1
+    m_Name: wrath
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 3
+    m_Scale: 1
+    m_Name: elusive
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: precision
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 5
+    m_Scale: 1
+    m_Name: blindness
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: poison
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: restore
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 8
+    m_Scale: 1
+    m_Name: healcut
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 9
+    m_Scale: 1
+    m_Name: mark
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 10
+    m_Scale: 1
+    m_Name: slowness
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 11
+    m_Scale: 1
+    m_Name: Status_11
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 12
+    m_Scale: 1
+    m_Name: Status_12
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 13
+    m_Scale: 1
+    m_Name: Status_13
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 14
+    m_Scale: 1
+    m_Name: Status_14
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 15
+    m_Scale: 1
+    m_Name: stun
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 16
+    m_Scale: 1
     m_Name: bleed
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 17
+    m_Scale: 1
+    m_Name: penitence
   m_GlyphTable:
   - m_Index: 0
     m_Metrics:
-      m_Width: 63
-      m_Height: 64
-      m_HorizontalBearingX: -31.5
-      m_HorizontalBearingY: 32
-      m_HorizontalAdvance: 63
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
     m_GlyphRect:
-      m_X: 160
-      m_Y: 438
-      m_Width: 63
-      m_Height: 64
+      m_X: 0
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-    sprite: {fileID: -6773611723979055997, guid: d4eaaacb2f61c6e4a9c60163932e497b, type: 3}
+    sprite: {fileID: -3019516997887768502, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 65
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 814004640374956523, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 2
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 130
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 6962396484033635494, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 195
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -6713231963320828161, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 260
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -9111092196008513476, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 325
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -4791753407910122166, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 390
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -7115641777840415526, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 455
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 1987289428962411420, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 520
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -5432620205739684469, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 9
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 585
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -1714587326511343238, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 10
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 650
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -2018058481527933341, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 11
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 715
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 2243717429656705874, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 12
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 780
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 7787517540700288752, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 13
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 845
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -6852777496594991496, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 14
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 910
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 8916648105341551598, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 15
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 975
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -4037855074611460424, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 16
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 1040
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -2783674646565937454, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
+  - m_Index: 17
+    m_Metrics:
+      m_Width: 65
+      m_Height: 65
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 32.5
+      m_HorizontalAdvance: 65
+    m_GlyphRect:
+      m_X: 1105
+      m_Y: 0
+      m_Width: 65
+      m_Height: 65
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 8675558817246999636, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
   spriteInfoList: []
-  fallbackSpriteAssets: []
---- !u!21 &2784335768979704067
+  fallbackSpriteAssets:
+  - {fileID: 11400000}
+--- !u!21 &623942125232003114
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: STATUS_Bleed Material
+  m_Name: Status Material
   m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -86,7 +444,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d4eaaacb2f61c6e4a9c60163932e497b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1c954c30b6e690f40aed383f6d8db7a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

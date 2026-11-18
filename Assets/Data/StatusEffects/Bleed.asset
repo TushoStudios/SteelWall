@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 2
   effectName: Bleed
-  icon: {fileID: 0}
+  description: "Causa dano equivalente aos ac\xFAmulos no come\xE7o do turno "
+  icon: {fileID: -6773611723979055997, guid: d4eaaacb2f61c6e4a9c60163932e497b, type: 3}

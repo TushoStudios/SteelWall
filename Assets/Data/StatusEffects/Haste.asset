@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 1
   effectName: Haste
-  icon: {fileID: 0}
+  description: Aumenta a velocidade
+  icon: {fileID: -3874503491176891867, guid: f051f83d98c58c9468f5be9c68a7cee9, type: 3}

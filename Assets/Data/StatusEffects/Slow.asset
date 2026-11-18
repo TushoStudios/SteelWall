@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 1
   effectName: Slow
-  icon: {fileID: 0}
+  description: Reduz a velocidade
+  icon: {fileID: 173048039432054298, guid: e33851c3673e0a441a8ff4ff8f5929b2, type: 3}

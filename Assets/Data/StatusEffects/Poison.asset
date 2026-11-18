@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 3
   effectName: Poison
-  icon: {fileID: 0}
+  description: "Causa dano equivalente aos ac\xFAmulos no fim do turno"
+  icon: {fileID: -2463941591765717888, guid: d37e740e24d2d41408ce18d03f3e5740, type: 3}

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusEffectSO
   type: 1
   effectName: Blind
-  icon: {fileID: 0}
+  description: "Reduz a precis\xE3o "
+  icon: {fileID: 8362412176630990821, guid: 88aa2242295d38343bd5e1735e0b9b32, type: 3}
