@@ -76,4 +76,4 @@ MonoBehaviour:
   character: {fileID: 0}
   statusEffects: []
   pref: {fileID: 8110579975474534625, guid: d8a20fe1cc9810b479e4a9d3ca7964f4, type: 3}
-  offset: {x: 0, y: 0}
+  offset: {x: 0, y: 5.5}

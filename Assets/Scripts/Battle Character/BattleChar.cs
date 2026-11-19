@@ -398,7 +398,6 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
 
     public virtual IEnumerator FinishingSkill(BattleResult result)
     {
-        if (result.skill_fail) yield break ;
         skill_current_data.Execute(this, result);
         yield return null;
         battle_manager.hud.OnPresentationStart(result);
@@ -425,6 +424,12 @@ public abstract class BattleChar : MonoBehaviour, IPointerClickHandler
                 Debug.Log($"{n.name} desviou");
                 result.dodge.Add(n);
                 return;            
+            }
+            if(result.skill_fail )
+            {
+                Debug.Log($"{n.name} falhou a skill");
+                result.dodge.Add(n);
+                return;
             }
             Debug.Log($"{n.name} tomou a skill");
             result.hit.Add(n);

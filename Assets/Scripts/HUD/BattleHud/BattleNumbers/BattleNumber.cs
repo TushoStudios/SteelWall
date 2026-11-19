@@ -17,9 +17,9 @@ public class BattleNumber : MonoBehaviour
             
     }
 
-    public void UpdateText(float t)
+    public void UpdateText(string t)
     {
-        value = Mathf.RoundToInt(t).ToString();
+        value = t;
         text.text = value;
         StartCoroutine(MoveText());
     }

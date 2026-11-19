@@ -15,13 +15,36 @@ public class StatusBarManager : MonoBehaviour
     {
         
     }
-
+    public void ClearBar()
+    {
+        foreach(StatusBar bar in statusBars)
+        {
+            Destroy(bar.gameObject);
+        }   
+        statusBars.Clear();
+    }
     public void CreateStatusBar(BattleChar battleChar)
     {
         GameObject newStatusBar = Instantiate(pref, battleChar.transform.position + (Vector3)offset, Quaternion.identity, transform);
         StatusBar statusBar = newStatusBar.GetComponent<StatusBar>();
         statusBar.SetBattleChar(battleChar);
         statusBars.Add(statusBar);
+    }
+    
+    public void UpdateBars()
+    {
+        foreach(StatusBar bar in statusBars)
+        {
+            bar.UpdateStatus();
+        }
+    }
+
+    public void UpdatePos()
+    {
+        foreach(StatusBar bar in statusBars)
+        {
+            bar.UpdatePos(bar.character);
+        }
     }
 
     public void DeleteBar(BattleChar battleChar)

@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
-  m_Name: SkillSO 1
+  m_Name: R2
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  Name: 
-  Description: 
-  icon: {fileID: -2481444624870785626, guid: 0548300072c42784eb4a749991526fe2, type: 3}
-  anim: {fileID: 6949785329362986207, guid: 48a507ae87e962145b875db55b7de2ef, type: 3}
-  reaction: 0
+  Name: Revigorar
+  Description: 'Cura 0 a 6 pontos de vida
+
+    Aplica <sprite name="restore">'
+  icon: {fileID: 7905958872146435475, guid: 7b36b0752a8714f43bc9e0d7b55d7d9c, type: 3}
+  anim: {fileID: -4295039307428948894, guid: bbf7ec3ee6961f249848b313f4b58e13, type: 3}
+  reaction: 2
   effects:
-  - {fileID: 11400000, guid: a695d629f48db48449d5dd0f8ed3eb50, type: 2}
-  - {fileID: 11400000, guid: dc82e7cb98b5385438113f398cfb04c4, type: 2}
+  - {fileID: 11400000, guid: a480fcc8a91584c409bc30e729ca966b, type: 2}
+  - {fileID: 11400000, guid: 5fa1c8fa1a33a1942b0845dd7b933543, type: 2}
   modifiers: []
   pos: 00000000010000000200000003000000
-  use_pos: 0000000001000000
+  use_pos: 010000000200000003000000
   acc_base: 100
   crit_mod: 0
   affect_enemy: 0
-  chose: 0
-  self: 1
+  chose: 1
+  self: 0
   can_dodge: 0
   can_miss: 0
   can_crit: 0

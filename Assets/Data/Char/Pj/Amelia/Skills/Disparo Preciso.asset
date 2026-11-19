@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Disparo Preciso
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   Name: Disparo Preciso
-  Description: 
+  Description: "Causa 75% de dano \nAplica <sprite name=\"mark\"> 2"
   icon: {fileID: 2918289801752941239, guid: 54963a7d33b85fa4685f8be118ebdd85, type: 3}
   anim: {fileID: 2613004191121863367, guid: dfb0fcd9f3c97cb4ab066a794fd78d49, type: 3}
   reaction: 1

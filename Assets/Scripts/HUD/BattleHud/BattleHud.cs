@@ -26,6 +26,7 @@ public class BattleHud : MonoBehaviour
         pj_hud.UpdateChildren();
         enemy_hud.UpdateChildren();
         lifeManager.UpdateLifeBars();
+        statusBarManager.UpdateBars();
     }
 
     public void OnStartTurn(BattleChar c)
@@ -51,18 +52,20 @@ public class BattleHud : MonoBehaviour
     {
         lifeManager.HideBars();
         indicatorManager.HideIndicators();
+        statusBarManager.HideBars();
     }
 
     public void ShowAll()
     {
         lifeManager.ShowBars();
-        indicatorManager.ShowIndicators();  
+        indicatorManager.ShowIndicators();
+        statusBarManager.ShowBars();
     }
 
     public void OnPresentationStart(BattleResult result)
     {
         HideAll();
-        showBattleNumbers.ShowNumbers(result.values);
+        showBattleNumbers.ShowNumbers(result);
     }
 
     public void OnPresentationEnd()

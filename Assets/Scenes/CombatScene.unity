@@ -4098,7 +4098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatusBarManager
   pref: {fileID: 4805541537623176192, guid: 67186fc7c5a48894b85987be135464ac, type: 3}
   statusBars: []
-  offset: {x: 0, y: 0}
+  offset: {x: 0, y: 5.5}
 --- !u!1 &1162173140
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,7 +5549,7 @@ MonoBehaviour:
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
+  m_spriteAsset: {fileID: 11400000, guid: 10f286ea4b8846640b9f470e371a623f, type: 2}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
   m_TextStyleHashCode: -1183493901
@@ -7530,6 +7530,7 @@ MonoBehaviour:
   lifeManager: {fileID: 1328683297}
   indicatorManager: {fileID: 154502492}
   showBattleNumbers: {fileID: 2125972869}
+  statusBarManager: {fileID: 1132054368}
 --- !u!114 &2125972869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7545,6 +7546,8 @@ MonoBehaviour:
   pref: {fileID: 4388586287947235114, guid: 09be9bcfcb214174ab1bf37b7baf464d, type: 3}
   heal: {fileID: 11400000, guid: abdadf60b253fc443b9a554e3ae26946, type: 2}
   damage: {fileID: 11400000, guid: e63a78627486e604b877cb515994d829, type: 2}
+  dodge: {fileID: 11400000, guid: 3781aaf51cf42254b96720b2763a9be5, type: 2}
+  miss: {fileID: 11400000, guid: 3781aaf51cf42254b96720b2763a9be5, type: 2}
 --- !u!1001 &3971430902943464119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7603,11 +7606,11 @@ PrefabInstance:
       objectReference: {fileID: 523271305}
     - target: {fileID: 2168740237297369963, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: pjs.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2168740237297369963, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: enemy.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2168740237297369963, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: 'pjs.Array.data[0]'
@@ -7624,7 +7627,7 @@ PrefabInstance:
     - target: {fileID: 2168740237297369963, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: 'pjs.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: 554927b8abf935b45bf3016710121f2a, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2168740237297369963, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: 'enemy.Array.data[0]'
       value: 
@@ -7640,7 +7643,7 @@ PrefabInstance:
     - target: {fileID: 2168740237297369963, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: 'enemy.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: 527fc9db6c0dccc468590bed8fbf6a54, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8917519997379622332, guid: 4af1ad84fd98ecb48be180ca9968fe6a, type: 3}
       propertyPath: m_Name
       value: -----BATTLE-MANAGER------

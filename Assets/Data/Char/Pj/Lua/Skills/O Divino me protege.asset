@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
+  m_Name: O Divino me protege
+  m_EditorClassIdentifier: Assembly-CSharp::SkillSO
+  Name: O divino me protege
+  Description: "Cura 5 a 10 de vida\nRecebe 10% de Prote\xE7\xE3o contra dano"
+  icon: {fileID: -2481444624870785626, guid: 0548300072c42784eb4a749991526fe2, type: 3}
+  anim: {fileID: 6949785329362986207, guid: 48a507ae87e962145b875db55b7de2ef, type: 3}
+  reaction: 2
+  effects:
+  - {fileID: 11400000, guid: 75f51dd11761c9945bac73a3716c5a38, type: 2}
+  - {fileID: 11400000, guid: 626dbf45ea5b3804ebca3bc431ff00d3, type: 2}
+  modifiers: []
+  pos: 
+  use_pos: 00000000010000000200000003000000
+  acc_base: 100
+  crit_mod: 0
+  affect_enemy: 0
+  chose: 0
+  self: 1
+  can_dodge: 0
+  can_miss: 0
+  can_crit: 0

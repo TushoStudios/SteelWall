@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: T
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBehaviourSO
   behaviour:
-  - {fileID: 11400000, guid: 046f819456a24ec4aa06af01c3e28ec0, type: 2}
-  - {fileID: 11400000, guid: aea4eb4858404e34e8067fee0619fd64, type: 2}
+  - {fileID: 11400000, guid: bbb3205dee23652458171c3db2dc6cd0, type: 2}
+  - {fileID: 11400000, guid: d1cf17479af284649b5d84ee369feee5, type: 2}
+  - {fileID: 11400000, guid: bfd8220452ea2df4781065eb70f234c2, type: 2}
   conditional: []

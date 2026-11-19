@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
+  m_Name: "Lan\xE7a divina"
+  m_EditorClassIdentifier: Assembly-CSharp::SkillSO
+  Name: "Lan\xE7a Divina"
+  Description: 'Causa 50% de dano
+
+    Aplica <sprite name="move"> 1
+
+    Se o alvo
+    tiver <sprite name="mark"> causa 50% de dano adicional
+
+'
+  icon: {fileID: 7905958872146435475, guid: ba3f6ceca6cd4014c9f814d23e088a1b, type: 3}
+  anim: {fileID: -74641670520355645, guid: d4bb3b631b41c0541af3f92c41f36a90, type: 3}
+  reaction: 1
+  effects:
+  - {fileID: 11400000, guid: d2f51e84410b61547ae89d6f0c891125, type: 2}
+  - {fileID: 11400000, guid: 2313cae223301df4186db98371df60cc, type: 2}
+  modifiers: []
+  pos: 0000000001000000
+  use_pos: 0000000001000000
+  acc_base: 90
+  crit_mod: 10
+  affect_enemy: 1
+  chose: 1
+  self: 0
+  can_dodge: 1
+  can_miss: 1
+  can_crit: 1

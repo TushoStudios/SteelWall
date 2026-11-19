@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
   m_Name: Corte Lacerante
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  Name: 
-  Description: 
+  Name: Corte Lacerante
+  Description: "Causa 90% de dano \n<sprite name=\"move\"> 1 \nSe o alvo tiver <sprite
+    name=\"mark\"> causa 25% de dano adicional"
   icon: {fileID: 8614319688527396397, guid: 37d32dfb3b3dbdf4a99547fee4314f10, type: 3}
   anim: {fileID: 5770280627661075779, guid: 655f0e6a24978f942a00bc1fb736ce32, type: 3}
   reaction: 1

@@ -226,5 +226,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83017b7b4911be6429fb870595c99269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatusIcon
-  iconImage: {fileID: 0}
-  stacks: 
+  iconImage: {fileID: 8420245932986246400}
+  stacks: {fileID: 1459090968870058926}

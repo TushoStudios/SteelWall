@@ -13,9 +13,5 @@ MonoBehaviour:
   m_Name: LuaSprites
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpriteSO
   idle: {fileID: 2148039342696530011, guid: 40fd77531205d0d4f852bffc87b1dac7, type: 3}
-  slash: {fileID: 6848856054801712177, guid: 0fd717879f412eb4c834ccaa925088d4, type: 3}
-  pierce: {fileID: 0}
-  bludgeoning: {fileID: 0}
-  casting: {fileID: 0}
-  ranged: {fileID: 0}
   hurt: {fileID: 4342430078824523004, guid: 8eddfdfbe3924c5489e49c38913b75b1, type: 3}
+  buff: {fileID: 6949785329362986207, guid: 48a507ae87e962145b875db55b7de2ef, type: 3}

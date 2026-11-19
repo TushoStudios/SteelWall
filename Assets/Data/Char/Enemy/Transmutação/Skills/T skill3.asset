@@ -10,24 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
-  m_Name: SkillSO 2
+  m_Name: T skill3
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   Name: 
   Description: 
-  icon: {fileID: 2918289801752941239, guid: c64487002233dd94f910ba6c8f19a56c, type: 3}
-  anim: {fileID: 6848856054801712177, guid: 0fd717879f412eb4c834ccaa925088d4, type: 3}
-  reaction: 1
+  icon: {fileID: 0}
+  anim: {fileID: -6578280660335621614, guid: 6668a3ad6e5d276449e204f9d72a24f8, type: 3}
+  reaction: 2
   effects:
-  - {fileID: 11400000, guid: 76a673b2506fd4e42a0154720a961143, type: 2}
-  - {fileID: 11400000, guid: f4bcda662ab73054b97cc41f51b23f9f, type: 2}
-  modifiers:
-  - {fileID: 11400000, guid: f2c1fa9eadc1afe4c8e963689e22f39a, type: 2}
-  pos: 0100000002000000
-  use_pos: 0000000001000000
+  - {fileID: 11400000, guid: 554432d104e2a594cbbfc28b4cd0610b, type: 2}
+  - {fileID: 11400000, guid: eba1be770aef3ae4bbca95ac65d7bcc7, type: 2}
+  modifiers: []
+  pos: 00000000010000000200000003000000
+  use_pos: 00000000010000000200000003000000
   acc_base: 95
   crit_mod: 5
   affect_enemy: 1
-  chose: 1
+  chose: 0
   self: 0
   can_dodge: 1
   can_miss: 1

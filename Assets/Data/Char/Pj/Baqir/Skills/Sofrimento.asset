@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Sofrimento
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   Name: Sofrimento
-  Description: 
+  Description: 'Causa 20% de dano
+
+    Aplica <sprite name="bleed"> 3
+
+    Aplica
+    <sprite name="mark"> 1'
   icon: {fileID: -8045637315960439886, guid: 3e0bbeebf390cdf4cbe4987a24e0e223, type: 3}
   anim: {fileID: -1058940749459921734, guid: 8476085b3c55a724589e9db23b521ca4, type: 3}
   reaction: 1

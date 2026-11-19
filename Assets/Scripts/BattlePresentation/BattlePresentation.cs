@@ -110,7 +110,7 @@ public class BattlePresentation : MonoBehaviour
         result.attacker.sprite_renderer.sprite = atk;
         foreach (BattleChar c in result.targets)
         {
-            if (c == result.attacker) continue;
+            if (c == result.attacker || c.spriteSO == null) continue;
             c.sprite_renderer.sprite = SwitchSprite(c, reaction);
         }
         yield return null;
@@ -171,11 +171,12 @@ public class BattlePresentation : MonoBehaviour
     IEnumerator CharReturnSprite(OriginalCharPos pos, float duration = 0.5f)
     {
         yield return new WaitForSeconds(duration);
-        pos.character.sprite_renderer.sprite = pos.character.spriteSO.idle;
+        if(pos.character.spriteSO != null) pos.character.sprite_renderer.sprite = pos.character.spriteSO.idle;
     }
 
     Sprite SwitchSprite(BattleChar c, BattleSprites s)
     {
+        if(c.spriteSO == null) return null;
         return s switch
         {
             BattleSprites.Idle => c.spriteSO.idle,

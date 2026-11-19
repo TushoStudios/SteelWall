@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpriteSO
   idle: {fileID: 4752219788757230897, guid: 063acb4c3fbdfa14a9e7eb17809bf856, type: 3}
   hurt: {fileID: -8157274205481674681, guid: 38e2bce679046024080b1f07583d24aa, type: 3}
-  buff: {fileID: 0}
+  buff: {fileID: -7294555412948472804, guid: 8ec8c47b6e9991d4880c4ce821188fc1, type: 3}

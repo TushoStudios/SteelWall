@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
   m_Name: Revigorar
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  Name: 
-  Description: 
+  Name: Revigorar
+  Description: 'Cura 0 a 6 pontos de vida
+
+    Aplica <sprite name="restore">'
   icon: {fileID: 7905958872146435475, guid: 7b36b0752a8714f43bc9e0d7b55d7d9c, type: 3}
   anim: {fileID: -7756439505829265835, guid: c87628fa0f8ea704092264e184e2f0ac, type: 3}
   reaction: 2

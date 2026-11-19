@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Vamos Aumentar a Difuculdade
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   Name: Vamos Aumentar a Difuculdade
-  Description: 
+  Description: "Aplica em si mesmo 2 acumulos de <sprite name=\"crit\">,  <sprite
+    name=\"speed\">, <sprite name=\"dodge\"> \nAplica em si mesmo <sprite name=\"bleed\">
+    3\n<sprite name=\"moveback\"> 1"
   icon: {fileID: -8045637315960439886, guid: b9c8df128a3b8274f861cfd51b788ec7, type: 3}
   anim: {fileID: -1337553829370455850, guid: e26dbe9c84bc53e4abbb367132101fb6, type: 3}
   reaction: 1

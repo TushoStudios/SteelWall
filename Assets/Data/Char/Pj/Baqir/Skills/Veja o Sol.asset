@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Veja o Sol
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
   Name: Veja o Sol
-  Description: 
+  Description: 'Causa 35% de dano
+
+    Aplica 2 acumulos de <sprite name="blind">
+    e <sprite name="dodgedown">'
   icon: {fileID: 8614319688527396397, guid: 34e72977fcb8ec2489ae6f75b47546d2, type: 3}
   anim: {fileID: -7294555412948472804, guid: 8ec8c47b6e9991d4880c4ce821188fc1, type: 3}
   reaction: 1

@@ -135,6 +135,16 @@ public class BattleManager : MonoBehaviour
         SetCharacterSpriteRender();
         SetContext();
         SetAllPosition();
+        SetStatusBar();
+    }
+
+    void SetStatusBar()
+    {
+        hud.statusBarManager.ClearBar();
+        foreach (BattleChar b in initiative)
+        {
+            hud.statusBarManager.CreateStatusBar(b);
+        }
     }
 
     public void CheckCharactersAlive()
@@ -166,6 +176,7 @@ public class BattleManager : MonoBehaviour
             if (pj_slot[i] == null) continue;
             BattleChar pj = pj_slot[i];
             pj.sprite_renderer.sortingOrder = 100 + (-1 * i); 
+            pj.sprite_renderer.flipX = pj is BattleTomb ? true : false;
         }
 
         for (int i = 0; i < enemy_slot.Length; i++)
@@ -173,7 +184,7 @@ public class BattleManager : MonoBehaviour
             if (enemy_slot[i] == null) continue;
             BattleChar n = enemy_slot[i];
             n.sprite_renderer.sortingOrder = 100 + (-1 * i);
-            n.sprite_renderer.flipX =true;
+            n.sprite_renderer.flipX = n is BattleTomb ? false : true;
         }
     }
 
@@ -274,16 +285,12 @@ public class BattleManager : MonoBehaviour
     IEnumerator SyncVisualPositions()
     {
         List<Coroutine> movements = new List<Coroutine>();
-        List<BattleChar> off = new List<BattleChar>();
         for (int i = 0; i < pj_slot.Length; i++)
         {
             if (pj_slot[i] != null)
             {
-                if (off.Contains(pj_slot[i])) continue;
                 Vector2 targetPos = GetWorldPos(i, pj_slot[i]);
-
                 movements.Add(StartCoroutine(MoveToPosition(pj_slot[i].transform, targetPos)));
-                off.Add(pj_slot[i]);
             }
         }
 
@@ -291,11 +298,8 @@ public class BattleManager : MonoBehaviour
         {
             if (enemy_slot[i] != null)
             {
-                if (off.Contains(enemy_slot[i])) continue;
                 Vector2 targetPos = GetWorldPos(i, enemy_slot[i]);
-
                 movements.Add(StartCoroutine(MoveToPosition(enemy_slot[i].transform, targetPos)));
-                off.Add(enemy_slot[i]);
             }
         }
 
@@ -320,10 +324,12 @@ public class BattleManager : MonoBehaviour
 
             tf.position = Vector3.Lerp(start, target, t);
             hud.lifeManager.MoveBars();
+            hud.statusBarManager.UpdatePos();
             yield return null;
         }
 
         tf.position = target;
+        hud.statusBarManager.UpdatePos();
     }
 
 
@@ -365,6 +371,7 @@ public class BattleManager : MonoBehaviour
     public void HudRemoveCharInfo(BattleChar c)
     {
         hud.lifeManager.IndividualDelete(c);
+        hud.statusBarManager.DeleteBar(c);
     }
 
     public int GetPosition(BattleChar b)
@@ -402,6 +409,7 @@ public class BattleManager : MonoBehaviour
         GameObject tomb = Instantiate(tomb_prefab);
         BattleTomb battleTomb = tomb.GetComponent<BattleTomb>();
         hud.lifeManager.IndividualSpawn(battleTomb);
+        hud.statusBarManager.CreateStatusBar(battleTomb);
         if (b is EnemyController)
         {
             enemy_slot[b.GetSelfPos()] = battleTomb;

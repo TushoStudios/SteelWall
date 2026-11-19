@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d7d4bb2d4ace2438d3b000cc197d4e, type: 3}
   m_Name: "Fervor V\xEDvido"
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  Name: 
-  Description: 
+  Name: "Fervor V\xEDvido"
+  Description: Aplica 1 acumulo de <sprite name="wrath"> e <sprite name="precision">
   icon: {fileID: 2918289801752941239, guid: 157d1294a074be74f9c1eb2fe5260e92, type: 3}
   anim: {fileID: 1367600477277776395, guid: 0c2e32f538037e8439a72ff027a63ff1, type: 3}
   reaction: 2

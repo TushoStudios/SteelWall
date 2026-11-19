@@ -4,7 +4,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SkillSO", menuName = "Scriptable Objects/SkillSO/Skill")]
 public class SkillSO : ScriptableObject
 {
-    public string Name, Description;
+    public string Name;
+
+    [TextArea]
+    public string Description;
+    
     public Sprite icon;
     public Sprite anim;
     public BattleSprites reaction;

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -22,11 +23,12 @@ public class StatusBar : MonoBehaviour
     public void SetBattleChar(BattleChar battleChar)
     {
         character = battleChar;
-        
+        UpdateStatus();
     }
 
     public void UpdateStatus()
     {
+        Debug.Log("Tentou dar update status");
         if(character == null) return;
         foreach(StatusEffectData effect in character.status_effects)
         {
@@ -48,5 +50,21 @@ public class StatusBar : MonoBehaviour
                 statusEffects.Add(statusicon);
             }
         }
+        List<StatusIcon> toRemove = statusEffects.ToList();
+        foreach (StatusIcon icon in toRemove)
+        {
+            if (character.status_effects.Contains(icon.statusEffectData)) continue;
+            if(icon.statusEffectData.stacks <=0)
+            {
+                statusEffects.Remove(icon);
+                Destroy(icon.gameObject);
+            }
+        }
+    }
+
+    public void UpdatePos(BattleChar c)
+    {
+        if (c != character) return;
+        transform.position = c.transform.position + (Vector3)offset;
     }
 }

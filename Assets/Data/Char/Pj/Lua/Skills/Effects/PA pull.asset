@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ac408c536f0d943b8385ce4a6b8c8a, type: 3}
-  m_Name: HealEffect
-  m_EditorClassIdentifier: Assembly-CSharp::HealEffectSO
+  m_Script: {fileID: 11500000, guid: 0a85c0bdd9216f34d8eccd2f892a6792, type: 3}
+  m_Name: PA pull
+  m_EditorClassIdentifier: Assembly-CSharp::MoveEffectSO
   self: 0
-  max_heal: 6
-  min_heal: 12
-  unique_value: 0
+  sfSO: {fileID: 11400000, guid: 853c982d45e1fbd4db6f614f6271ab11, type: 2}
+  stacks: 0
+  resist: 1
+  dir: -1
