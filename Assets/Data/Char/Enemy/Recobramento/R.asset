@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df9752366abf6549a6c508d9fea2f4b, type: 3}
   m_Name: R
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBehaviourSO
-  behaviour: []
+  behaviour:
+  - {fileID: 11400000, guid: 1f67df8b70a7c524ca7543f042b3cc01, type: 2}
+  - {fileID: 11400000, guid: 1325059079097c7439365a43b5952510, type: 2}
+  - {fileID: 11400000, guid: bedcdf85468323d4bb92922f7999c86d, type: 2}
+  - {fileID: 11400000, guid: 7db677823e771b347b3b570a7a4dbb19, type: 2}
   conditional: []
